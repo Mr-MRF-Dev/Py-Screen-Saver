@@ -1,6 +1,8 @@
 # Py Screen Saver
 
-...
+A simple screen saver app made with Python Tk that displays a clock in the center of the screen.
+
+![Screenshot](/images/screenshot.jpg)
 
 ## Installation
 
