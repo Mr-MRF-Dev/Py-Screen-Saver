@@ -84,3 +84,11 @@ Done :)
     ```bash
     reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v SCRNSAVE.EXE /t REG_SZ /d C:\Windows\system32\main.exe /f
     ```
+
+## Contributing
+
+we welcome any contributions you may have. If you're interested in helping out, simply fork the repository and create an [Issue](https://github.com/Mr-MRF-Dev/Py-Screen-Saver/issues) and [PR](https://github.com/Mr-MRF-Dev/Py-Screen-Saver/pulls).
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/Mr-MRF-Dev/Py-Screen-Saver?tab=MIT-1-ov-file) file for details.
