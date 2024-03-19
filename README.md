@@ -1,4 +1,4 @@
-# Python Clock Screen Saver
+# Py Screen Saver
 
 ...
 
@@ -15,25 +15,25 @@
     use [Git](https://git-scm.com/) on your system
 
     ```bash
-    git clone https://github.com/Mr-MRF-Dev/python-mini-projects.git
+    git clone https://github.com/Mr-MRF-Dev/Py-Screen-Saver.git
     ```
 
     or use [GitHub CLI](https://cli.github.com/)
 
     ```bash
-    gh repo clone Mr-MRF-Dev/python-mini-projects
+    gh repo clone Mr-MRF-Dev/Py-Screen-Saver
     ```
 
 3. Change your directory.
 
     ```bash
-    cd python-mini-projects/src
+    cd Py-Screen-Saver/src
     ```
 
-4. Create exe File
+4. Create `exe` File
 
    ```bash
-   pyinstaller --noconfirm --onefile --windowed  .\Clock-Screen-Saver.py
+   pyinstaller --noconfirm --onefile --windowed  .\main.py
    ```
 
 5. Change File Format to `scr`
@@ -43,19 +43,19 @@
     ```
 
     ```bash
-    ren Clock-Screen-Saver.exe Clock-Screen-Saver.scr
+    ren main.exe main.scr
     ```
 
 6. Move the file to `C:/windows/system32` (Administrator access is required)
 
     ```bash
-    mv Clock-Screen-Saver.scr C:/windows/system32
+    mv main.scr C:/windows/system32
     ```
 
 7. Install the new screen saver (with registry):
 
     ```bash
-     reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v SCRNSAVE.EXE /t REG_SZ /d C:\Windows\system32\Clock-Screen-Saver.scr /f
+     reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v SCRNSAVE.EXE /t REG_SZ /d C:\Windows\system32\main.scr /f
     ```
 
     > reg add flags: `/v` \<Valuename\>, `/t` \<Type\>, `/d` \<Data\>, `/f` Adds the registry entry without prompting for confirmation.
@@ -80,5 +80,5 @@ Done :)
 - Also, you don't need to rename the file to 'scr' extension. Instead, you can directly install the file with the 'exe' extension.
 
     ```bash
-    reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v SCRNSAVE.EXE /t REG_SZ /d C:\Windows\system32\Clock-Screen-Saver.exe /f
+    reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v SCRNSAVE.EXE /t REG_SZ /d C:\Windows\system32\main.exe /f
     ```
