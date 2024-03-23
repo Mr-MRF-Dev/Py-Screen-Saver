@@ -87,8 +87,8 @@ Done :)
 
 ## Contributing
 
-we welcome any contributions you may have. If you're interested in helping out, simply fork the repository and create an [Issue](https://github.com/Mr-MRF-Dev/Py-Screen-Saver/issues) and [PR](https://github.com/Mr-MRF-Dev/Py-Screen-Saver/pulls).
+we welcome any contributions you may have. If you're interested in helping out, fork the repository and create an [Issue](https://github.com/Mr-MRF-Dev/Py-Screen-Saver/issues) and [PR](https://github.com/Mr-MRF-Dev/Py-Screen-Saver/pulls).
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/Mr-MRF-Dev/Py-Screen-Saver?tab=MIT-1-ov-file) file for details.
+This project is licensed under the MIT License - see the [LICENSE](/LICENSE) file for details.
