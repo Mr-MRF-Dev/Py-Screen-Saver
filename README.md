@@ -1,10 +1,10 @@
-# Py Screen Saver
+# 🖥️ Py Screen Saver
 
 A simple screen saver app made with Python Tk that displays a clock in the center of the screen.
 
 ![Screenshot](/images/screenshot.jpg)
 
-## Installation
+## 📥 Installation
 
 1. Install [tkinter](https://docs.python.org/3/library/tkinter.html) and [pyinstaller](https://pypi.org/project/pyinstaller/)
 
@@ -65,7 +65,7 @@ A simple screen saver app made with Python Tk that displays a clock in the cente
 
 Done :)
 
-## Tips
+## 💡 Tips
 
 - To see all screen savers:
 
@@ -85,10 +85,10 @@ Done :)
     reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v SCRNSAVE.EXE /t REG_SZ /d C:\Windows\system32\main.exe /f
     ```
 
-## Contributing
+## 🤝 Contributing
 
 we welcome any contributions you may have. If you're interested in helping out, fork the repository and create an [Issue](https://github.com/Mr-MRF-Dev/Py-Screen-Saver/issues) and [PR](https://github.com/Mr-MRF-Dev/Py-Screen-Saver/pulls).
 
-## License
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](/LICENSE) file for details.
