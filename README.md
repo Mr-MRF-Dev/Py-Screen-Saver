@@ -1,5 +1,8 @@
 # 🖥️ Py Screen Saver
 
+[![GitHub License](https://img.shields.io/github/license/Mr-MRF-Dev/Py-Screen-Saver)](/LICENSE)
+[![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
 A simple screen saver app made with Python Tk that displays a clock in the center of the screen.
 
 ![Screenshot](/images/screenshot.jpg)
@@ -48,7 +51,7 @@ A simple screen saver app made with Python Tk that displays a clock in the cente
     ren main.exe main.scr
     ```
 
-6. Move the file to `C:/windows/system32` (Administrator access is required)
+6. Move the file to `C:/windows/system32` **(Administrator access is required)**
 
     ```bash
     mv main.scr C:/windows/system32
