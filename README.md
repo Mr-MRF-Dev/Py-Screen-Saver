@@ -9,10 +9,10 @@ A simple screen saver app made with Python Tk that displays a clock in the cente
 
 ## 📥 Installation
 
-1. Install [tkinter](https://docs.python.org/3/library/tkinter.html) and [pyinstaller](https://pypi.org/project/pyinstaller/)
+1. Install [tkinter](https://docs.python.org/3/library/tkinter.html) and [pyinstaller](https://pypi.org/project/pyinstaller/) ( by using [requirements.txt](https://pip.pypa.io/en/stable/reference/requirements-file-format/) )
 
     ```bash
-    pip install tk pyinstaller
+    pip install -r requirements.txt
     ```
 
 2. Clone Code
