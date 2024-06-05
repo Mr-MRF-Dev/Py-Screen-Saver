@@ -9,13 +9,7 @@ A simple screen saver app made with Python Tk that displays a clock in the cente
 
 ## 📥 Installation
 
-1. Install [tkinter](https://docs.python.org/3/library/tkinter.html) and [pyinstaller](https://pypi.org/project/pyinstaller/) ( by using [requirements.txt](https://pip.pypa.io/en/stable/reference/requirements-file-format/) )
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-2. Clone Code
+1. Clone Code
 
     use [Git](https://git-scm.com/) on your system
 
@@ -29,19 +23,29 @@ A simple screen saver app made with Python Tk that displays a clock in the cente
     gh repo clone Mr-MRF-Dev/Py-Screen-Saver
     ```
 
-3. Change your directory.
+2. Change your directory.
 
     ```bash
-    cd Py-Screen-Saver/src
+    cd Py-Screen-Saver
+    ```
+    
+3. Install [tkinter](https://docs.python.org/3/library/tkinter.html) and [pyinstaller](https://pypi.org/project/pyinstaller/) ( by using [requirements.txt](https://pip.pypa.io/en/stable/reference/requirements-file-format/) )
+
+    ```bash
+    pip install -r requirements.txt
     ```
 
 4. Create `exe` File
 
    ```bash
+   cd src
+   ```
+
+   ```bash
    pyinstaller --noconfirm --onefile --windowed  .\main.py
    ```
 
-5. Change File Format to `scr`
+6. Change File Format to `scr`
 
     ```bash
     cd dist
@@ -51,13 +55,13 @@ A simple screen saver app made with Python Tk that displays a clock in the cente
     ren main.exe main.scr
     ```
 
-6. Move the file to `C:/windows/system32` **(Administrator access is required)**
+7. Move the file to `C:/windows/system32` **(Administrator access is required)**
 
     ```bash
     mv main.scr C:/windows/system32
     ```
 
-7. Install the new screen saver (with registry):
+8. Install the new screen saver (with registry):
 
     ```bash
      reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v SCRNSAVE.EXE /t REG_SZ /d C:\Windows\system32\main.scr /f
