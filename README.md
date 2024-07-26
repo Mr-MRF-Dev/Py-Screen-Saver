@@ -3,7 +3,7 @@
 [![GitHub License](https://img.shields.io/github/license/Mr-MRF-Dev/Py-Screen-Saver)](/LICENSE)
 [![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-A simple screen saver app made with Python Tk that displays a clock in the center of the screen.
+Simple screen saver application using Python's Tkinter library. This app displays a clock at the center of the screen when activated.
 
 ![Screenshot](/images/screenshot.jpg)
 
