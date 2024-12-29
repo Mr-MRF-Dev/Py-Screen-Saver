@@ -1,0 +1,59 @@
+name: Build & Release App 🚀
+
+on:
+  push:
+    tags:
+      - "v[0-9]+.[0-9]+.[0-9]+"
+
+jobs:
+  windows:
+    name: Windows 🛠
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+      - name: Setup Python 📝
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: "pip"
+
+      - name: Install Dependencies ⚙
+        run: pip install -r requirements.txt
+
+      - name: Build 💢
+        run: pyinstaller --noconfirm --clean --onefile --windowed  ./src/main.py
+
+      - name: Change File Format ✨
+        run: cp dist/main.exe dist/Py-Screen-Saver-win.scr
+
+      - name: Upload Artifact 📤
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows
+          path: dist/Py-Screen-Saver-win.scr
+
+  release:
+    needs: windows
+    name: Release 📚
+    permissions:
+      contents: write
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+      - name: Download Artifact 📥
+        uses: actions/download-artifact@v4
+        with:
+          name: windows
+          path: builds
+
+      - name: Create Release ⭐
+        uses: softprops/action-gh-release@v2
+        with:
+          generate_release_notes: true
+          files: builds/Py-Screen-Saver-win.scr
