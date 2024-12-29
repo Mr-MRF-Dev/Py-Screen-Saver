@@ -9,6 +9,8 @@ Simple screen saver application using Python's Tkinter library. This app display
 
 ## 📥 Installation
 
+follow the instruction to install Screen Saver App on Windows OS:
+
 1. Clone Code
 
     use [Git](https://git-scm.com/) on your system
@@ -28,7 +30,7 @@ Simple screen saver application using Python's Tkinter library. This app display
     ```bash
     cd Py-Screen-Saver
     ```
-    
+
 3. Install [tkinter](https://docs.python.org/3/library/tkinter.html) and [pyinstaller](https://pypi.org/project/pyinstaller/) ( by using [requirements.txt](https://pip.pypa.io/en/stable/reference/requirements-file-format/) )
 
     ```bash
@@ -38,37 +40,35 @@ Simple screen saver application using Python's Tkinter library. This app display
 4. Create `exe` File
 
    ```bash
-   cd src
+   pyinstaller --noconfirm --onefile --windowed  ./src/main.py
    ```
 
-   ```bash
-   pyinstaller --noconfirm --onefile --windowed  .\main.py
-   ```
-
-6. Change File Format to `scr`
+5. Change File Format to `scr`
 
     ```bash
     cd dist
     ```
 
     ```bash
-    ren main.exe main.scr
+    ren main.exe Py-Screen-Saver-win.scr
     ```
 
-7. Move the file to `C:/windows/system32` **(Administrator access is required)**
+6. Move the file to `C:/windows/system32` **(Administrator access is required)**
 
     ```bash
-    mv main.scr C:/windows/system32
+    mv Py-Screen-Saver-win.scr C:/windows/system32
     ```
 
-8. Install the new screen saver (with registry):
+7. Install the new screen saver (with registry):
 
     ```bash
-     reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v SCRNSAVE.EXE /t REG_SZ /d C:\Windows\system32\main.scr /f
+     reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v SCRNSAVE.EXE /t REG_SZ /d C:\Windows\system32\Py-Screen-Saver-win.scr /f
     ```
 
     > reg add flags: `/v` \<Valuename\>, `/t` \<Type\>, `/d` \<Data\>, `/f` Adds the registry entry without prompting for confirmation.
     > [More about reg command](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/reg)
+
+    You can also right-click on the `.scr` file and select the "Install" option.
 
 Done :)
 
