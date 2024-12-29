@@ -1,5 +1,8 @@
 # 🖥️ Py Screen Saver
 
+[![GitHub Release](https://img.shields.io/github/v/release/Mr-MRF-Dev/Py-Screen-Saver)](https://github.com/Mr-MRF-Dev/Py-Screen-Saver/releases)
+![GitHub repo size](https://img.shields.io/github/repo-size/Mr-MRF-Dev/Py-Screen-Saver)
+[![Build & Release App 🚀](https://github.com/Mr-MRF-Dev/Py-Screen-Saver/actions/workflows/build.yml/badge.svg)](https://github.com/Mr-MRF-Dev/Py-Screen-Saver/actions/workflows/build.yml)
 [![GitHub License](https://img.shields.io/github/license/Mr-MRF-Dev/Py-Screen-Saver)](/LICENSE)
 [![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
@@ -8,6 +11,10 @@ Simple screen saver application using Python's Tkinter library. This app display
 ![Screenshot](/images/screenshot.jpg)
 
 ## 📥 Installation
+
+you can download the latest version of the app from the [Releases](https://github.com/Mr-MRF-Dev/Py-Screen-Saver/releases) page.
+
+## 🛠 Getting Started
 
 follow the instruction to install Screen Saver App on Windows OS:
 
