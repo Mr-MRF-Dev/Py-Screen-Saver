@@ -24,7 +24,7 @@ jobs:
       - name: Install Dependencies ⚙
         run: pip install -r requirements.txt
 
-      - name: Python GUI With TkInter
+      - name: Compile With Nuitka 💢
         uses: Nuitka/Nuitka-Action@main
         with:
           nuitka-version: main
@@ -32,10 +32,8 @@ jobs:
           mode: app
           enable-plugins: tk-inter
 
-      - run: ls -r
-
       - name: Change File Format ✨
-        run: cp main.exe Py-Screen-Saver-win.scr
+        run: cp build/main.exe Py-Screen-Saver-win.scr
 
       - name: Upload Artifact 📤
         uses: actions/upload-artifact@v4
