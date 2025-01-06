@@ -47,7 +47,7 @@ follow the instruction to install Screen Saver App on Windows OS:
 4. Create `exe` File with Nuitka
 
    ```bash
-   nuitka --mode=app --enable-plugin=tk-inter  src/main.py
+   nuitka --mode=app --assume-yes-for-downloads --enable-plugin=tk-inter  src/main.py
    ```
 
 5. Change File Format to `scr`
