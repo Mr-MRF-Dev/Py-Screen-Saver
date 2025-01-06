@@ -38,23 +38,19 @@ follow the instruction to install Screen Saver App on Windows OS:
     cd Py-Screen-Saver
     ```
 
-3. Install [tkinter](https://docs.python.org/3/library/tkinter.html) and [pyinstaller](https://pypi.org/project/pyinstaller/) ( by using [requirements.txt](https://pip.pypa.io/en/stable/reference/requirements-file-format/) )
+3. Install [tkinter](https://docs.python.org/3/library/tkinter.html) and [Nuitka](https://pypi.org/project/Nuitka/) ( by using [requirements.txt](https://pip.pypa.io/en/stable/reference/requirements-file-format/) )
 
     ```bash
     pip install -r requirements.txt
     ```
 
-4. Create `exe` File
+4. Create `exe` File with Nuitka
 
    ```bash
-   pyinstaller --noconfirm --onefile --windowed  ./src/main.py
+   nuitka --standalone --onefile --enable-plugin=tk-inter  src/main.py
    ```
 
 5. Change File Format to `scr`
-
-    ```bash
-    cd dist
-    ```
 
     ```bash
     ren main.exe Py-Screen-Saver-win.scr
