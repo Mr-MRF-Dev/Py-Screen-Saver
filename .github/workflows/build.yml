@@ -39,7 +39,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: windows
-          path: dist/Py-Screen-Saver-win.scr
+          path: Py-Screen-Saver-win.scr
 
   release:
     needs: windows
