@@ -19,15 +19,23 @@ jobs:
         with:
           python-version: "3.13"
           cache: "pip"
+          cache-dependency-path: requirements*.txt
 
       - name: Install Dependencies ⚙
         run: pip install -r requirements.txt
 
-      - name: Build 💢
-        run: pyinstaller --noconfirm --clean --onefile --windowed  ./src/main.py
+      - name: Python GUI With TkInter
+        uses: Nuitka/Nuitka-Action@main
+        with:
+          nuitka-version: main
+          script-name: src/main.py
+          mode: app
+          enable-plugins: tk-inter
+
+      - run: ls -r
 
       - name: Change File Format ✨
-        run: cp dist/main.exe dist/Py-Screen-Saver-win.scr
+        run: cp main.exe Py-Screen-Saver-win.scr
 
       - name: Upload Artifact 📤
         uses: actions/upload-artifact@v4
