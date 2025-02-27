@@ -30,6 +30,7 @@ jobs:
           nuitka-version: main
           script-name: src/main.py
           mode: app
+          windows-console-mode: disable
           enable-plugins: tk-inter
 
       - name: Change File Format ✨
