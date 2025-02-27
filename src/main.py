@@ -1,10 +1,34 @@
+import sys
 from tkinter import *
 from time import sleep, strftime
+from tkinter import messagebox
 
+
+# Screen Saver windows command-line arguments https://docs.microsoft.com/en-us/troubleshoot/windows/win32/screen-saver-command-line
+if len(sys.argv) == 1:
+    # ScreenSaver           - Show the Settings dialog box.
+    messagebox.showinfo("Settings", "We don't have settings for now.")
+    exit(0)
+
+elif len(sys.argv) >= 2 and sys.argv[1].startswith("/c"):
+    # ScreenSaver /c        - Show the Settings dialog box, modal to the foreground window.
+    messagebox.showinfo("Settings", "We don't have settings for now.")
+    exit(0)
+
+elif len(sys.argv) >= 2 and sys.argv[1].startswith("/p"):
+    # ScreenSaver /p <HWND> - Preview Screen Saver as child of window <HWND>.
+    pass
+
+elif len(sys.argv) >= 2 and sys.argv[1] == "/s":
+    # ScreenSaver /s        - Run the Screen Saver.
+    pass
+
+
+# Main Window
 root = Tk()
 
 # Window Attributes
-root.overrideredirect(1)
+root.overrideredirect(True)
 root.wm_attributes("-transparentcolor", "gray99")
 
 running = True
